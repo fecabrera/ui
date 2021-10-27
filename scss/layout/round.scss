@@ -1,0 +1,15 @@
+$border-rounded-none: 0;
+$border-rounded-xs: 1px;
+$border-rounded-sm: 2px;
+$border-rounded-md: 3px;
+$border-rounded-lg: 5px;
+$border-rounded-xl: 7px;
+$border-rounded-full: 999px;
+
+.r-none { border-radius: $border-rounded-none; }
+.r-xs { border-radius: $border-rounded-xs; }
+.r-sm { border-radius: $border-rounded-sm; }
+.r-md { border-radius: $border-rounded-md; }
+.r-lg { border-radius: $border-rounded-lg; }
+.r-xl { border-radius: $border-rounded-xl; }
+.r-full { border-radius: $border-rounded-full; }

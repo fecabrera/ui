@@ -1,0 +1,120 @@
+@use "sass:math";
+@import "media";
+
+@mixin w($i, $n: 12) { width: math.div($i * 100%, $n); }
+
+@mixin w-0 { @include w(0); }
+@mixin w-1 { @include w(1); }
+@mixin w-2 { @include w(2); }
+@mixin w-3 { @include w(3); }
+@mixin w-4 { @include w(4); }
+@mixin w-5 { @include w(5); }
+@mixin w-6 { @include w(6); }
+@mixin w-7 { @include w(7); }
+@mixin w-8 {@include w(8); }
+@mixin w-9 { @include w(9); }
+@mixin w-10 { @include w(10); }
+@mixin w-11 { @include w(11); }
+@mixin w-12 { @include w(12); }
+@mixin w-full { width: 100%; }
+@mixin w-expand { flex-grow: 1; }
+
+.w-0 { @include w-0; }
+.w-1 { @include w-1; }
+.w-2 { @include w-2; }
+.w-3 { @include w-3; }
+.w-4 { @include w-4; }
+.w-5 { @include w-5; }
+.w-6 { @include w-6; }
+.w-7 { @include w-7; }
+.w-8 { @include w-8; }
+.w-9 { @include w-9; }
+.w-10 { @include w-10; }
+.w-11 { @include w-11; }
+.w-full { @include w-full; }
+.w-expand { @include w-expand; }
+
+@media (min-width: $media-xs) {
+  .xs\:w-0 { @include w-0; }
+  .xs\:w-1 { @include w-1; }
+  .xs\:w-2 { @include w-2; }
+  .xs\:w-3 { @include w-3; }
+  .xs\:w-4 { @include w-4; }
+  .xs\:w-5 { @include w-5; }
+  .xs\:w-6 { @include w-6; }
+  .xs\:w-7 { @include w-7; }
+  .xs\:w-8 { @include w-8; }
+  .xs\:w-9 { @include w-9; }
+  .xs\:w-10 { @include w-10; }
+  .xs\:w-11 { @include w-11; }
+  .xs\:w-full { @include w-full; }
+  .xs\:w-expand { @include w-expand; }
+}
+
+@media (min-width: $media-sm) {
+  .sm\:w-0 { @include w-0; }
+  .sm\:w-1 { @include w-1; }
+  .sm\:w-2 { @include w-2; }
+  .sm\:w-3 { @include w-3; }
+  .sm\:w-4 { @include w-4; }
+  .sm\:w-5 { @include w-5; }
+  .sm\:w-6 { @include w-6; }
+  .sm\:w-7 { @include w-7; }
+  .sm\:w-8 { @include w-8; }
+  .sm\:w-9 { @include w-9; }
+  .sm\:w-10 { @include w-10; }
+  .sm\:w-11 { @include w-11; }
+  .sm\:w-full { @include w-full; }
+  .sm\:w-expand { @include w-expand; }
+}
+
+@media (min-width: $media-md) {
+  .md\:w-0 { @include w-0; }
+  .md\:w-1 { @include w-1; }
+  .md\:w-2 { @include w-2; }
+  .md\:w-3 { @include w-3; }
+  .md\:w-4 { @include w-4; }
+  .md\:w-5 { @include w-5; }
+  .md\:w-6 { @include w-6; }
+  .md\:w-7 { @include w-7; }
+  .md\:w-8 { @include w-8; }
+  .md\:w-9 { @include w-9; }
+  .md\:w-10 { @include w-10; }
+  .md\:w-11 { @include w-11; }
+  .md\:w-full { @include w-full; }
+  .md\:w-expand { @include w-expand; }
+}
+
+@media (min-width: $media-lg) {
+  .lg\:w-0 { @include w-0; }
+  .lg\:w-1 { @include w-1; }
+  .lg\:w-2 { @include w-2; }
+  .lg\:w-3 { @include w-3; }
+  .lg\:w-4 { @include w-4; }
+  .lg\:w-5 { @include w-5; }
+  .lg\:w-6 { @include w-6; }
+  .lg\:w-7 { @include w-7; }
+  .lg\:w-8 { @include w-8; }
+  .lg\:w-9 { @include w-9; }
+  .lg\:w-10 { @include w-10; }
+  .lg\:w-11 { @include w-11; }
+  .lg\:w-full { @include w-full; }
+  .lg\:w-expand { @include w-expand; }
+}
+
+@media (min-width: $media-xl) {
+  .xl\:w-0 { @include w-0; }
+  .xl\:w-1 { @include w-1; }
+  .xl\:w-2 { @include w-2; }
+  .xl\:w-3 { @include w-3; }
+  .xl\:w-4 { @include w-4; }
+  .xl\:w-5 { @include w-5; }
+  .xl\:w-6 { @include w-6; }
+  .xl\:w-7 { @include w-7; }
+  .xl\:w-8 { @include w-8; }
+  .xl\:w-9 { @include w-9; }
+  .xl\:w-10 { @include w-10; }
+  .xl\:w-11 { @include w-11; }
+  .xl\:w-full { @include w-full; }
+  .xl\:w-expand { @include w-expand; }
+}

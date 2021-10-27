@@ -1,0 +1,52 @@
+.dropdown {
+  display: block;
+  position: relative;
+
+  &.left > .dropdown-content { left: 0; }
+  &.right > .dropdown-content { right: 0; }
+
+  > .dropdown-content {
+    @extend .px-none, .py-xs, .m-none !optional;
+    @extend .card, .stack, .stack-vertical !optional;
+
+    display: block;
+    position: absolute;
+    
+    opacity: 0;
+    visibility: hidden;
+    
+    min-width: 10em;
+    z-index: 1010;
+
+    transition-property: opacity, visibility;
+    transition-duration: .35s;
+
+    &.large { min-width: 13em !important; }
+
+    > .hr {
+      @extend .my-xs !optional;
+    }
+
+    > li {
+      @extend .py-xs, .px-lg, .medium !optional;
+      
+      display: block;
+      appearance: none;
+    }
+  }
+  
+  &.top > .dropdown-content {
+    @extend .mt-lg !optional;
+    top: 100%;
+  }
+
+  &.bottom > .dropdown-content {
+    @extend .mb-lg !optional;
+    bottom: 100%;
+  }
+
+  &.active > .dropdown-content {
+    opacity: 1;
+    visibility: visible;
+  }
+}

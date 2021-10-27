@@ -1,0 +1,200 @@
+@import "media";
+@import "margin";
+
+@mixin stack-vertical {
+  flex-direction: column;
+
+  &.gutter-none > .stack-item { @include my-none; }
+  &.gutter-xs > .stack-item { @include my-xs; }
+  &.gutter-sm > .stack-item { @include my-sm; }
+  &.gutter-md > .stack-item { @include my-md; }
+  &.gutter-lg > .stack-item { @include my-lg; }
+  &.gutter-xl > .stack-item { @include my-xl; }
+
+  > .stack-item {
+    @include mx-none;
+
+    &:first-child { @include mt-none; }
+    &:last-child { @include mb-none; }
+  }
+}
+
+@mixin stack-horizontal {
+  flex-direction: row;
+
+  &.gutter-none > .stack-item { @include mx-none; }
+  &.gutter-xs > .stack-item { @include mx-xs; }
+  &.gutter-sm > .stack-item { @include mx-sm; }
+  &.gutter-md > .stack-item { @include mx-md; }
+  &.gutter-lg > .stack-item { @include mx-lg; }
+  &.gutter-xl > .stack-item { @include mx-xl; }
+
+  > .stack-item {
+    @include my-none;
+
+    &:first-child { @include ml-none; }
+    &:last-child { @include mr-none; }
+  }
+}
+
+@mixin stack-vertical-reverse {
+  flex-direction: column-reverse;
+  
+  &.gutter-none > .stack-item { @include my-none; }
+  &.gutter-xs > .stack-item { @include my-xs; }
+  &.gutter-sm > .stack-item { @include my-sm; }
+  &.gutter-md > .stack-item { @include my-md; }
+  &.gutter-lg > .stack-item { @include my-lg; }
+  &.gutter-xl > .stack-item { @include my-xl; }
+  
+  > .stack-item {
+    @include mx-none;
+
+    &:first-child { @include mb-none; }
+    &:last-child { @include mt-none; }
+  }
+}
+
+@mixin stack-horizontal-reverse {
+  flex-direction: row-reverse;
+  
+  &.gutter-none > .stack-item { @include mx-none; }
+  &.gutter-xs > .stack-item { @include mx-xs; }
+  &.gutter-sm > .stack-item { @include mx-sm; }
+  &.gutter-md > .stack-item { @include mx-md; }
+  &.gutter-lg > .stack-item { @include mx-lg; }
+  &.gutter-xl > .stack-item { @include mx-xl; }
+
+  > .stack-item {
+    @include my-none;
+
+    &:first-child { @include mr-none; }
+    &:last-child { @include ml-none; }
+  }
+}
+
+.stack {
+  display: flex !important;
+  box-sizing: border-box;
+
+  .inline { display: inline-flex !important; }
+
+  > .stack-item {
+    display: block;
+    box-sizing: border-box;
+  }
+  
+  > .view-spacer { flex-grow: 1; }
+
+  &.justify-content-start { justify-content: flex-start; }
+  &.justify-content-center { justify-content: center; }
+  &.justify-content-end { justify-content: flex-end; }
+
+  &.align-items-start { align-items: flex-start; }
+  &.align-items-center { align-items: center; }
+  &.align-items-end { align-items: flex-end; }
+
+  &.align-content-start { align-content: flex-start; }
+  &.align-content-center { align-content: center; }
+  &.align-content-end { align-content: flex-end; }
+
+  &.stack-vertical { @include stack-vertical; }
+  &.stack-horizontal { @include stack-horizontal; }
+
+  @media (max-width: $media-xs) {
+    &.mobile\:stack-vertical { @include stack-vertical; }
+    &.mobile\:stack-horizontal { @include stack-horizontal; }
+  }
+
+  @media (min-width: $media-xs) {
+    &.xs\:stack-vertical { @include stack-vertical; }
+    &.xs\:stack-horizontal { @include stack-horizontal; }
+  }
+  
+  @media (min-width: $media-sm) {
+    &.sm\:stack-vertical { @include stack-vertical; }
+    &.sm\:stack-horizontal { @include stack-horizontal; }
+  }
+
+  @media (min-width: $media-md) {
+    &.md\:stack-vertical { @include stack-vertical; }
+    &.md\:stack-horizontal { @include stack-horizontal; }
+  }
+
+  @media (min-width: $media-lg) {
+    &.lg\:stack-vertical { @include stack-vertical; }
+    &.lg\:stack-horizontal { @include stack-horizontal; }
+  }
+
+  @media (min-width: $media-xl) {
+    &.xl\:stack-vertical { @include stack-vertical; }
+    &.xl\:stack-horizontal { @include stack-horizontal; }
+  }
+}
+
+.stack.stack-reverse {
+  &.stack-vertical { @include stack-vertical-reverse; }
+  &.stack-horizontal { @include stack-horizontal-reverse; }
+
+  @media (max-width: $media-xs) {
+    &.mobile\:stack-vertical { @include stack-vertical-reverse; }
+    &.mobile\:stack-horizontal { @include stack-horizontal-reverse; }
+  }
+
+  @media (min-width: $media-xs) {
+    &.xs\:stack-vertical { @include stack-vertical-reverse; }
+    &.xs\:stack-horizontal { @include stack-horizontal-reverse; }
+  }
+  
+  @media (min-width: $media-sm) {
+    &.sm\:stack-vertical { @include stack-vertical-reverse; }
+    &.sm\:stack-horizontal { @include stack-horizontal-reverse; }
+  }
+
+  @media (min-width: $media-md) {
+    &.md\:stack-vertical { @include stack-vertical-reverse; }
+    &.md\:stack-horizontal { @include stack-horizontal-reverse; }
+  }
+
+  @media (min-width: $media-lg) {
+    &.lg\:stack-vertical { @include stack-vertical-reverse; }
+    &.lg\:stack-horizontal { @include stack-horizontal-reverse; }
+  }
+
+  @media (min-width: $media-xl) {
+    &.xl\:stack-vertical { @include stack-vertical-reverse; }
+    &.xl\:stack-horizontal { @include stack-horizontal-reverse; }
+  }
+}
+
+.stack {
+  @media (max-width: $media-xs) {
+    &.mobile\:stack-reverse.stack-vertical { @include stack-vertical-reverse; }
+    &.mobile\:stack-reverse.stack-horizontal { @include stack-horizontal-reverse; }
+  }
+
+  @media (min-width: $media-xs) {
+    &.xs\:stack-reverse.stack-vertical { @include stack-vertical-reverse; }
+    &.xs\:stack-reverse.stack-horizontal { @include stack-horizontal-reverse; }
+  }
+
+  @media (min-width: $media-sm) {
+    &.sm\:stack-reverse.stack-vertical { @include stack-vertical-reverse; }
+    &.sm\:stack-reverse.stack-horizontal { @include stack-horizontal-reverse; }
+  }
+
+  @media (min-width: $media-md) {
+    &.md\:stack-reverse.stack-vertical { @include stack-vertical-reverse; }
+    &.md\:stack-reverse.stack-horizontal { @include stack-horizontal-reverse; }
+  }
+
+  @media (min-width: $media-lg) {
+    &.lg\:stack-reverse.stack-vertical { @include stack-vertical-reverse; }
+    &.lg\:stack-reverse.stack-horizontal { @include stack-horizontal-reverse; }
+  }
+
+  @media (min-width: $media-xl) {
+    &.xl\:stack-reverse.stack-vertical { @include stack-vertical-reverse; }
+    &.xl\:stack-reverse.stack-horizontal { @include stack-horizontal-reverse; }
+  }
+}

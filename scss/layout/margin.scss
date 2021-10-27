@@ -1,0 +1,403 @@
+@import "spacing";
+@import "media";
+
+@mixin m-none { margin: $spacing-none !important; }
+@mixin m-xs { margin: $spacing-xs !important; }
+@mixin m-sm { margin: $spacing-sm !important; }
+@mixin m-md { margin: $spacing-md !important; }
+@mixin m-lg { margin: $spacing-lg !important; }
+@mixin m-xl { margin: $spacing-xl !important; }
+@mixin m-auto { margin: $spacing-auto !important; }
+
+@mixin mt-none { margin-top: $spacing-none !important; }
+@mixin mt-xs { margin-top: $spacing-xs !important; }
+@mixin mt-sm { margin-top: $spacing-sm !important; }
+@mixin mt-md { margin-top: $spacing-md !important; }
+@mixin mt-lg { margin-top: $spacing-lg !important; }
+@mixin mt-xl { margin-top: $spacing-xl !important; }
+@mixin mt-auto { margin-top: $spacing-auto !important; }
+
+@mixin mb-none { margin-bottom: $spacing-none !important; }
+@mixin mb-xs { margin-bottom: $spacing-xs !important; }
+@mixin mb-sm { margin-bottom: $spacing-sm !important; }
+@mixin mb-md { margin-bottom: $spacing-md !important; }
+@mixin mb-lg { margin-bottom: $spacing-lg !important; }
+@mixin mb-xl { margin-bottom: $spacing-xl !important; }
+@mixin mb-auto { margin-bottom: $spacing-auto !important; }
+
+@mixin my-none { @include mt-none; @include mb-none; }
+@mixin my-xs { @include mt-xs; @include mb-xs; }
+@mixin my-sm { @include mt-sm; @include mb-sm; }
+@mixin my-md { @include mt-md; @include mb-md; }
+@mixin my-lg { @include mt-lg; @include mb-lg; }
+@mixin my-xl { @include mt-xl; @include mb-xl; }
+@mixin my-auto { @include mt-auto; @include mb-auto; }
+
+@mixin ml-none { margin-left: $spacing-none !important; }
+@mixin ml-xs { margin-left: $spacing-xs !important; }
+@mixin ml-sm { margin-left: $spacing-sm !important; }
+@mixin ml-md { margin-left: $spacing-md !important; }
+@mixin ml-lg { margin-left: $spacing-lg !important; }
+@mixin ml-xl { margin-left: $spacing-xl !important; }
+@mixin ml-auto { margin-left: $spacing-auto !important; }
+
+@mixin mr-none { margin-right: $spacing-none !important; }
+@mixin mr-xs { margin-right: $spacing-xs !important; }
+@mixin mr-sm { margin-right: $spacing-sm !important; }
+@mixin mr-md { margin-right: $spacing-md !important; }
+@mixin mr-lg { margin-right: $spacing-lg !important; }
+@mixin mr-xl { margin-right: $spacing-xl !important; }
+@mixin mr-auto { margin-right: $spacing-auto !important; }
+
+@mixin mx-none { @include ml-none; @include mr-none; }
+@mixin mx-xs { @include ml-xs; @include mr-xs; }
+@mixin mx-sm { @include ml-sm; @include mr-sm; }
+@mixin mx-md { @include ml-md; @include mr-md; }
+@mixin mx-lg { @include ml-lg; @include mr-lg; }
+@mixin mx-xl { @include ml-xl; @include mr-xl; }
+@mixin mx-auto { @include ml-auto; @include mr-auto; }
+
+.m-none { @include m-none; }
+.m-xs { @include m-xs; }
+.m-sm { @include m-sm; }
+.m-md { @include m-md; }
+.m-lg { @include m-lg; }
+.m-xl { @include m-xl; }
+.m-auto { @include m-auto; }
+
+.mt-none { @include mt-none; }
+.mt-xs { @include mt-xs; }
+.mt-sm { @include mt-sm; }
+.mt-md { @include mt-md; }
+.mt-lg { @include mt-lg; }
+.mt-xl { @include mt-xl; }
+.mt-auto { @include mt-auto; }
+
+.mb-none { @include mb-none; }
+.mb-xs { @include mb-xs; }
+.mb-sm { @include mb-sm; }
+.mb-md { @include mb-md; }
+.mb-lg { @include mb-lg; }
+.mb-xl { @include mb-xl; }
+.mb-auto { @include mb-auto; }
+
+.my-none { @include my-none; }
+.my-xs { @include my-xs; }
+.my-sm { @include my-sm; }
+.my-md { @include my-md; }
+.my-lg { @include my-lg; }
+.my-xl { @include my-xl; }
+.my-auto { @include my-auto; }
+
+.ml-none { @include ml-none; }
+.ml-xs { @include ml-xs; }
+.ml-sm { @include ml-sm; }
+.ml-md { @include ml-md; }
+.ml-lg { @include ml-lg; }
+.ml-xl { @include ml-xl; }
+
+.mr-none { @include mr-none; }
+.mr-xs { @include mr-xs; }
+.mr-sm { @include mr-sm; }
+.mr-md { @include mr-md; }
+.mr-lg { @include mr-lg; }
+.mr-xl { @include mr-xl; }
+.mr-auto { @include mr-auto; }
+
+.mx-none { @include mx-none; }
+.mx-xs { @include mx-xs; }
+.mx-sm { @include mx-sm; }
+.mx-md { @include mx-md; }
+.mx-lg { @include mx-lg; }
+.mx-xl { @include mx-xl; }
+.mx-auto { @include mx-auto; }
+
+@media (max-width: $media-xs) {
+  .mobile\:m-none { @include m-none; }
+  .mobile\:m-xs { @include m-xs; }
+  .mobile\:m-sm { @include m-sm; }
+  .mobile\:m-md { @include m-md; }
+  .mobile\:m-lg { @include m-lg; }
+  .mobile\:m-xl { @include m-xl; }
+  .mobile\:m-auto { @include m-auto; }
+
+  .mobile\:mt-none { @include mt-none; }
+  .mobile\:mt-xs { @include mt-xs; }
+  .mobile\:mt-sm { @include mt-sm; }
+  .mobile\:mt-md { @include mt-md; }
+  .mobile\:mt-lg { @include mt-lg; }
+  .mobile\:mt-xl { @include mt-xl; }
+  .mobile\:mt-auto { @include mt-auto; }
+
+  .mobile\:mb-none { @include mb-none; }
+  .mobile\:mb-xs { @include mb-xs; }
+  .mobile\:mb-sm { @include mb-sm; }
+  .mobile\:mb-md { @include mb-md; }
+  .mobile\:mb-lg { @include mb-lg; }
+  .mobile\:mb-xl { @include mb-xl; }
+  .mobile\:mb-auto { @include mb-auto; }
+
+  .mobile\:my-none { @include my-none; }
+  .mobile\:my-xs { @include my-xs; }
+  .mobile\:my-sm { @include my-sm; }
+  .mobile\:my-md { @include my-md; }
+  .mobile\:my-lg { @include my-lg; }
+  .mobile\:my-xl { @include my-xl; }
+  .mobile\:my-auto { @include my-auto; }
+
+  .mobile\:ml-none { @include ml-none; }
+  .mobile\:ml-xs { @include ml-xs; }
+  .mobile\:ml-sm { @include ml-sm; }
+  .mobile\:ml-md { @include ml-md; }
+  .mobile\:ml-lg { @include ml-lg; }
+  .mobile\:ml-xl { @include ml-xl; }
+  .mobile\:ml-auto { @include ml-auto; }
+
+  .mobile\:mr-none { @include mr-none; }
+  .mobile\:mr-xs { @include mr-xs; }
+  .mobile\:mr-sm { @include mr-sm; }
+  .mobile\:mr-md { @include mr-md; }
+  .mobile\:mr-lg { @include mr-lg; }
+  .mobile\:mr-xl { @include mr-xl; }
+  .mobile\:mr-auto { @include mr-auto; }
+
+  .mobile\:mx-none { @include mx-none; }
+  .mobile\:mx-xs { @include mx-xs; }
+  .mobile\:mx-sm { @include mx-sm; }
+  .mobile\:mx-md { @include mx-md; }
+  .mobile\:mx-lg { @include mx-lg; }
+  .mobile\:mx-xl { @include mx-xl; }
+  .mobile\:mx-auto { @include mx-auto; }
+}
+
+@media (min-width: $media-xs) {
+  .xs\:m-none { @include m-none; }
+  .xs\:m-xs { @include m-xs; }
+  .xs\:m-sm { @include m-sm; }
+  .xs\:m-md { @include m-md; }
+  .xs\:m-lg { @include m-lg; }
+  .xs\:m-xl { @include m-xl; }
+  .xs\:m-auto { @include m-auto; }
+
+  .xs\:mt-none { @include mt-none; }
+  .xs\:mt-xs { @include mt-xs; }
+  .xs\:mt-sm { @include mt-sm; }
+  .xs\:mt-md { @include mt-md; }
+  .xs\:mt-lg { @include mt-lg; }
+  .xs\:mt-xl { @include mt-xl; }
+  .xs\:mt-auto { @include mt-auto; }
+
+  .xs\:mb-none { @include mb-none; }
+  .xs\:mb-xs { @include mb-xs; }
+  .xs\:mb-sm { @include mb-sm; }
+  .xs\:mb-md { @include mb-md; }
+  .xs\:mb-lg { @include mb-lg; }
+  .xs\:mb-xl { @include mb-xl; }
+  .xs\:mb-auto { @include mb-auto; }
+
+  .xs\:my-none { @include my-none; }
+  .xs\:my-xs { @include my-xs; }
+  .xs\:my-sm { @include my-sm; }
+  .xs\:my-md { @include my-md; }
+  .xs\:my-lg { @include my-lg; }
+  .xs\:my-xl { @include my-xl; }
+  .xs\:my-auto { @include my-auto; }
+
+  .xs\:ml-none { @include ml-none; }
+  .xs\:ml-xs { @include ml-xs; }
+  .xs\:ml-sm { @include ml-sm; }
+  .xs\:ml-md { @include ml-md; }
+  .xs\:ml-lg { @include ml-lg; }
+  .xs\:ml-xl { @include ml-xl; }
+  .xs\:ml-auto { @include ml-auto; }
+
+  .xs\:mr-none { @include mr-none; }
+  .xs\:mr-xs { @include mr-xs; }
+  .xs\:mr-sm { @include mr-sm; }
+  .xs\:mr-md { @include mr-md; }
+  .xs\:mr-lg { @include mr-lg; }
+  .xs\:mr-xl { @include mr-xl; }
+  .xs\:mr-auto { @include mr-auto; }
+
+  .xs\:mx-none { @include mx-none; }
+  .xs\:mx-xs { @include mx-xs; }
+  .xs\:mx-sm { @include mx-sm; }
+  .xs\:mx-md { @include mx-md; }
+  .xs\:mx-lg { @include mx-lg; }
+  .xs\:mx-xl { @include mx-xl; }
+  .xs\:mx-auto { @include mx-auto; }
+}
+
+@media (min-width: $media-md) {
+  .md\:m-none { @include m-none; }
+  .md\:m-xs { @include m-xs; }
+  .md\:m-sm { @include m-sm; }
+  .md\:m-md { @include m-md; }
+  .md\:m-lg { @include m-lg; }
+  .md\:m-xl { @include m-xl; }
+  .md\:m-auto { @include m-auto; }
+
+  .md\:mt-none { @include mt-none; }
+  .md\:mt-xs { @include mt-xs; }
+  .md\:mt-sm { @include mt-sm; }
+  .md\:mt-md { @include mt-md; }
+  .md\:mt-lg { @include mt-lg; }
+  .md\:mt-xl { @include mt-xl; }
+  .md\:mt-auto { @include mt-auto; }
+
+  .md\:mb-none { @include mb-none; }
+  .md\:mb-xs { @include mb-xs; }
+  .md\:mb-sm { @include mb-sm; }
+  .md\:mb-md { @include mb-md; }
+  .md\:mb-lg { @include mb-lg; }
+  .md\:mb-xl { @include mb-xl; }
+  .md\:mb-auto { @include mb-auto; }
+
+  .md\:my-none { @include my-none; }
+  .md\:my-xs { @include my-xs; }
+  .md\:my-sm { @include my-sm; }
+  .md\:my-md { @include my-md; }
+  .md\:my-lg { @include my-lg; }
+  .md\:my-xl { @include my-xl; }
+  .md\:my-auto { @include my-auto; }
+
+  .md\:ml-none { @include ml-none; }
+  .md\:ml-xs { @include ml-xs; }
+  .md\:ml-sm { @include ml-sm; }
+  .md\:ml-md { @include ml-md; }
+  .md\:ml-lg { @include ml-lg; }
+  .md\:ml-xl { @include ml-xl; }
+  .md\:ml-auto { @include ml-auto; }
+
+  .md\:mr-none { @include mr-none; }
+  .md\:mr-xs { @include mr-xs; }
+  .md\:mr-sm { @include mr-sm; }
+  .md\:mr-md { @include mr-md; }
+  .md\:mr-lg { @include mr-lg; }
+  .md\:mr-xl { @include mr-xl; }
+  .md\:mr-auto { @include mr-auto; }
+
+  .md\:mx-none { @include mx-none; }
+  .md\:mx-xs { @include mx-xs; }
+  .md\:mx-sm { @include mx-sm; }
+  .md\:mx-md { @include mx-md; }
+  .md\:mx-lg { @include mx-lg; }
+  .md\:mx-xl { @include mx-xl; }
+  .md\:mx-auto { @include mx-auto; }
+}
+
+@media (min-width: $media-lg) {
+  .lg\:m-none { @include m-none; }
+  .lg\:m-xs { @include m-xs; }
+  .lg\:m-sm { @include m-sm; }
+  .lg\:m-md { @include m-md; }
+  .lg\:m-lg { @include m-lg; }
+  .lg\:m-xl { @include m-xl; }
+  .lg\:m-auto { @include m-auto; }
+
+  .lg\:mt-none { @include mt-none; }
+  .lg\:mt-xs { @include mt-xs; }
+  .lg\:mt-sm { @include mt-sm; }
+  .lg\:mt-md { @include mt-md; }
+  .lg\:mt-lg { @include mt-lg; }
+  .lg\:mt-xl { @include mt-xl; }
+  .lg\:mt-auto { @include mt-auto; }
+
+  .lg\:mb-none { @include mb-none; }
+  .lg\:mb-xs { @include mb-xs; }
+  .lg\:mb-sm { @include mb-sm; }
+  .lg\:mb-md { @include mb-md; }
+  .lg\:mb-lg { @include mb-lg; }
+  .lg\:mb-xl { @include mb-xl; }
+  .lg\:mb-auto { @include mb-auto; }
+
+  .lg\:my-none { @include my-none; }
+  .lg\:my-xs { @include my-xs; }
+  .lg\:my-sm { @include my-sm; }
+  .lg\:my-md { @include my-md; }
+  .lg\:my-lg { @include my-lg; }
+  .lg\:my-xl { @include my-xl; }
+  .lg\:my-auto { @include my-auto; }
+
+  .lg\:ml-none { @include ml-none; }
+  .lg\:ml-xs { @include ml-xs; }
+  .lg\:ml-sm { @include ml-sm; }
+  .lg\:ml-md { @include ml-md; }
+  .lg\:ml-lg { @include ml-lg; }
+  .lg\:ml-xl { @include ml-xl; }
+  .lg\:ml-auto { @include ml-auto; }
+
+  .lg\:mr-none { @include mr-none; }
+  .lg\:mr-xs { @include mr-xs; }
+  .lg\:mr-sm { @include mr-sm; }
+  .lg\:mr-md { @include mr-md; }
+  .lg\:mr-lg { @include mr-lg; }
+  .lg\:mr-xl { @include mr-xl; }
+  .lg\:mr-auto { @include mr-auto; }
+
+  .lg\:mx-none { @include mx-none; }
+  .lg\:mx-xs { @include mx-xs; }
+  .lg\:mx-sm { @include mx-sm; }
+  .lg\:mx-md { @include mx-md; }
+  .lg\:mx-lg { @include mx-lg; }
+  .lg\:mx-xl { @include mx-xl; }
+  .lg\:mx-auto { @include mx-auto; }
+}
+
+@media (min-width: $media-xl) {
+  .xl\:m-none { @include m-none; }
+  .xl\:m-xs { @include m-xs; }
+  .xl\:m-sm { @include m-sm; }
+  .xl\:m-md { @include m-md; }
+  .xl\:m-lg { @include m-lg; }
+  .xl\:m-xl { @include m-xl; }
+  .xl\:m-auto { @include m-auto; }
+
+  .xl\:mt-none { @include mt-none; }
+  .xl\:mt-xs { @include mt-xs; }
+  .xl\:mt-sm { @include mt-sm; }
+  .xl\:mt-md { @include mt-md; }
+  .xl\:mt-lg { @include mt-lg; }
+  .xl\:mt-xl { @include mt-xl; }
+  .xl\:mt-auto { @include mt-auto; }
+
+  .xl\:mb-none { @include mb-none; }
+  .xl\:mb-xs { @include mb-xs; }
+  .xl\:mb-sm { @include mb-sm; }
+  .xl\:mb-md { @include mb-md; }
+  .xl\:mb-lg { @include mb-lg; }
+  .xl\:mb-xl { @include mb-xl; }
+  .xl\:mb-auto { @include mb-auto; }
+
+  .xl\:my-none { @include my-none; }
+  .xl\:my-xs { @include my-xs; }
+  .xl\:my-sm { @include my-sm; }
+  .xl\:my-md { @include my-md; }
+  .xl\:my-lg { @include my-lg; }
+  .xl\:my-xl { @include my-xl; }
+  .xl\:my-auto { @include my-auto; }
+
+  .xl\:ml-none { @include ml-none; }
+  .xl\:ml-xs { @include ml-xs; }
+  .xl\:ml-sm { @include ml-sm; }
+  .xl\:ml-md { @include ml-md; }
+  .xl\:ml-lg { @include ml-lg; }
+  .xl\:ml-xl { @include ml-xl; }
+  .xl\:ml-auto { @include ml-auto; }
+
+  .xl\:mr-none { @include mr-none; }
+  .xl\:mr-xs { @include mr-xs; }
+  .xl\:mr-sm { @include mr-sm; }
+  .xl\:mr-md { @include mr-md; }
+  .xl\:mr-lg { @include mr-lg; }
+  .xl\:mr-xl { @include mr-xl; }
+  .xl\:mr-auto { @include mr-auto; }
+
+  .xl\:mx-none { @include mx-none; }
+  .xl\:mx-xs { @include mx-xs; }
+  .xl\:mx-sm { @include mx-sm; }
+  .xl\:mx-md { @include mx-md; }
+  .xl\:mx-lg { @include mx-lg; }
+  .xl\:mx-xl { @include mx-xl; }
+  .xl\:mx-auto { @include mx-auto; }
+}

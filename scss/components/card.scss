@@ -1,0 +1,17 @@
+.card {
+  @extend .r-lg, .shadow-md !optional;
+
+  // border: 1px solid var(--border-line-color);
+  background-color: white;
+
+  transition-property: box-shadow;
+  transition-duration: .35s;
+
+  &:hover {
+    @extend .shadow-lg !optional;
+  }
+
+  .card-item, &.card-item {
+    @extend .p-lg !optional;
+  }
+}

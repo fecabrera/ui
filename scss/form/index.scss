@@ -1,0 +1,26 @@
+@import "input";
+
+.form {
+  @extend .stack, .stack-vertical, .gutter-md !optional;
+}
+
+.form-group {
+  @extend .stack-item !optional;
+  @extend .stack, .stack-vertical, .gutter-sm !optional;
+}
+
+.form-field {
+  @extend .stack-item !optional;
+  @extend .stack, .stack-vertical !optional;
+
+  box-sizing: border-box;
+
+  label {
+    margin-bottom: .15em;
+  }
+  
+  small {
+    font-size: .8em;
+    margin-top: .2em;
+  }
+}

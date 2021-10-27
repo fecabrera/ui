@@ -1,0 +1,23 @@
+@import "display";
+@import "height";
+@import "modal";
+@import "margin";
+@import "padding";
+@import "round";
+@import "shadow";
+@import "stack";
+@import "pager";
+@import "view";
+@import "width";
+
+.sticky { position: sticky; }
+
+.sticky-top {
+  @extend .sticky;
+  top: 0;
+}
+
+.sticky-bottom {
+  @extend .sticky;
+  bottom: 0;
+}

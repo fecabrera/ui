@@ -1,0 +1,99 @@
+.button {
+  @extend .r-lg, .px-lg, .m-none, .button-default !optional;
+  @extend .semibold !optional;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  
+  box-sizing: border-box;
+  text-decoration: none;
+
+  border: none;
+  color: inherit;
+
+  // line-height: 2.5em;
+  height: 2.5em;
+
+  transition-property: all;
+  transition-duration: .35s;
+
+  &.button-transparent {
+    background-color: transparent !important;
+  }
+
+  &.button-action {
+    height: initial;
+  }
+
+  &.button-link {
+    @extend .button-transparent;
+
+    &:hover { color: var(--color-primary); }
+  }
+
+  &.button-default {
+    background-color: #e5e5e5;
+    
+    &:hover:not(.button-transparent) { @extend .shadow-xs !optional; }
+  }
+
+  &.button-primary, &.button-secondary {
+    &:not(.button-transparent) {
+      @extend .shadow-xs !optional;
+
+      &:hover { @extend .shadow-md !optional; }
+      &:focus { @extend .shadow-sm !optional; }
+    }
+  }
+  
+  &.button-disabled, &:disabled {
+    color: var(--color-disabled) !important;
+    cursor: default;
+
+    &:hover, &:hover { box-shadow: none !important; }
+  }
+
+  &.button-primary {
+    background-color: var(--color-primary);
+    border-color: var(--color-primary);
+    color: white;
+
+    &.button-inverted {
+      color: var(--color-primary);
+      background-color: white;
+    }
+  }
+
+  &.button-secondary {
+    background-color: var(--color-secondary);
+    border-color: var(--color-secondary);
+    color: white;
+    
+    &.button-inverted {
+      color: var(--color-secondary);
+      background-color: white;
+    }
+  }
+
+  &.button-danger {
+    background-color: var(--color-danger);
+    color: white;
+    
+    &.button-inverted {
+      color: var(--color-danger);
+      background-color: white;
+    }
+  }
+
+  &.button-icon {
+    padding: 0 !important;
+    width: 2.5em;
+
+    > img {
+      height: 100%;
+      width: 100%;
+    }
+  }
+}

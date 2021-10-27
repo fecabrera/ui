@@ -1,0 +1,40 @@
+.menu {
+  @extend .stack, .gutter-md !optional;
+
+  &.menu-vertical { @extend .stack-vertical !optional; }
+  &.menu-horizontal { @extend .stack-horizontal !optional; }
+  
+  &.xs\:menu-vertical { @extend .xs\:stack-vertical !optional; }
+  &.xs\:menu-horizontal { @extend .xs\:stack-horizontal !optional; }
+
+  &.sm\:menu-vertical { @extend .sm\:stack-vertical !optional; }
+  &.sm\:menu-horizontal { @extend .sm\:stack-horizontal !optional; }
+  
+  &.md\:menu-vertical { @extend .md\:stack-vertical !optional; }
+  &.md\:menu-horizontal { @extend .md\:stack-horizontal !optional; }
+
+  &.lg\:menu-vertical { @extend .lg\:stack-vertical !optional; }
+  &.lg\:menu-horizontal { @extend .lg\:stack-horizontal !optional; }
+
+  &.xl\:menu-vertical { @extend .xl\:stack-vertical !optional; }
+  &.xl\:menu-horizontal { @extend .xl\:stack-horizontal !optional; }
+
+  > .menu-spacer { flex-grow: 1; }
+
+  > .menu-item {
+    @extend .stack-item !optional;
+    @extend .stack, .inline, .stack-horizontal, .align-items-center, .justify-content-center !optional;
+
+    font: inherit;
+    font-size: .9em;
+    color: inherit;
+    text-decoration: inherit;
+
+    transition-property: color;
+    transition-duration: .35s;
+  }
+
+  > a.menu-item:hover {
+    color: var(--color-primary);
+  }
+}

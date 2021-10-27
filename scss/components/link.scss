@@ -1,0 +1,13 @@
+.link {
+  @extend .stack, .inline, .stack-horizontal, .align-items-center, .justify-content-center !optional;
+  
+  color: inherit;
+  text-decoration: none;
+
+  transition-property: color;
+  transition-duration: .35s;
+
+  &:hover {
+    color: var(--color-primary);
+  }
+}

@@ -1,0 +1,100 @@
+@import "media";
+
+@mixin modal-xs { width: $media-xs; }
+@mixin modal-sm { width: $media-sm; }
+@mixin modal-md { width: $media-md; }
+@mixin modal-lg { width: $media-lg; }
+@mixin modal-xl { width: $media-xl; }
+@mixin modal-full { width: $media-full; }
+
+.modal {
+  @extend .s-base !optional;
+
+  display: block;
+  position: fixed;
+
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+  backdrop-filter: blur(7px);
+  -webkit-backdrop-filter: blur(7px);
+  background-color: rgba(0,0,0,.1);
+
+  z-index: 101;
+  
+  opacity: 0;
+  visibility: hidden;
+
+  transition-property: opacity, visibility;
+  transition-duration: .35s;
+
+  &.active {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  &.modal-center > .modal-content {
+    left: 50%;
+    top: 50%;
+
+    transform: translate(-50%, -50%);
+  }
+
+  > .modal-content {
+    position: absolute;
+  }
+
+  &.modal-xs > .modal-content { @include modal-xs; }
+  &.modal-sm > .modal-content { @include modal-sm; }
+  &.modal-md > .modal-content { @include modal-md; }
+  &.modal-lg > .modal-content { @include modal-lg; }
+  &.modal-xl > .modal-content { @include modal-xl; }
+  &.modal-full > .modal-content { @include modal-full; }
+
+  @media (min-width: $media-xs) {
+    &.xs\:modal-xs > .modal-content { @include modal-xs; }
+    &.xs\:modal-sm > .modal-content { @include modal-sm; }
+    &.xs\:modal-md > .modal-content { @include modal-md; }
+    &.xs\:modal-lg > .modal-content { @include modal-lg; }
+    &.xs\:modal-xl > .modal-content { @include modal-xl; }
+    &.xs\:modal-full > .modal-content { @include modal-full; }
+  }
+
+  @media (min-width: $media-sm) {
+    &.sm\:modal-xs > .modal-content { @include modal-xs; }
+    &.sm\:modal-sm > .modal-content { @include modal-sm; }
+    &.sm\:modal-md > .modal-content { @include modal-md; }
+    &.sm\:modal-lg > .modal-content { @include modal-lg; }
+    &.sm\:modal-xl > .modal-content { @include modal-xl; }
+    &.sm\:modal-full > .modal-content { @include modal-full; }
+  }
+
+  @media (min-width: $media-md) {
+    &.md\:modal-xs > .modal-content { @include modal-xs; }
+    &.md\:modal-sm > .modal-content { @include modal-sm; }
+    &.md\:modal-md > .modal-content { @include modal-md; }
+    &.md\:modal-lg > .modal-content { @include modal-lg; }
+    &.md\:modal-xl > .modal-content { @include modal-xl; }
+    &.md\:modal-full > .modal-content { @include modal-full; }
+  }
+
+  @media (min-width: $media-lg) {
+    &.lg\:modal-xs > .modal-content { @include modal-xs; }
+    &.lg\:modal-sm > .modal-content { @include modal-sm; }
+    &.lg\:modal-md > .modal-content { @include modal-md; }
+    &.lg\:modal-lg > .modal-content { @include modal-lg; }
+    &.lg\:modal-xl > .modal-content { @include modal-xl; }
+    &.lg\:modal-full > .modal-content { @include modal-full; }
+  }
+
+  @media (min-width: $media-xl) {
+    &.xl\:modal-xs > .modal-content { @include modal-xs; }
+    &.xl\:modal-sm > .modal-content { @include modal-sm; }
+    &.xl\:modal-md > .modal-content { @include modal-md; }
+    &.xl\:modal-lg > .modal-content { @include modal-lg; }
+    &.xl\:modal-xl > .modal-content { @include modal-xl; }
+    &.xl\:modal-full > .modal-content { @include modal-full; }
+  }
+}

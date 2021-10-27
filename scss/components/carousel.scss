@@ -1,0 +1,91 @@
+.carousel {
+  display: block;
+  position: relative;
+  overflow: hidden;
+
+  > .carousel-content {
+    @extend .stack, .stack-horizontal !optional;
+
+    position: relative;
+    left: 0;
+
+    transition-property: left;
+    transition-duration: .5s;
+
+    > .carousel-item {
+      @extend .stack-item !optional;
+
+      min-width: 100%;
+
+      // transition-property: visibility, opacity;
+      // transition-duration: .5s;
+
+      &:not(.active) {
+        // visibility: hidden;
+        // opacity: 0;
+      }
+    }
+  }
+}
+
+.carousel-button {
+  @extend .dark;
+
+  text-decoration: none;
+
+  transition-property: opacity, color;
+  transition-duration: .35s;
+
+  z-index: 100;
+
+  &.light { color: black; }
+  &.dark { color: white; }
+  &.primary { color: var(--color-primary); }
+  &.secondary { color: var(--color-secondary); }
+
+  &:not(:hover) { opacity: .7; }
+}
+
+.carousel-next, .carousel-back {
+  @extend .carousel-button;
+
+  display: flex;
+  flex-direction: row;
+
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+
+  position: absolute;
+  width: 2.5em;
+  top: 0;
+  bottom: 0;
+}
+
+.carousel-back { left: 0; }
+.carousel-next { right: 0 }
+
+.carousel-indicators {
+  @extend .stack, .stack-horizontal, .gutter-xs, .justify-content-center, .p-none, .m-none !optional;
+
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  
+  > a {
+    @extend .carousel-button;
+    @extend .stack-item, .py-md !optional;
+    
+    > .carousel-indicator {
+      @extend .r-full !optional;
+
+      display: block;
+      width: 2.5em;
+      height: 3px;
+      box-sizing: content-box;
+      
+      background-color: white;
+    }
+  }
+}

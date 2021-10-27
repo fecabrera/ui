@@ -1,0 +1,93 @@
+.field {
+  @extend .r-lg, .m-none, .shadow-xs !optional;
+
+  display: block;
+  box-sizing: border-box;
+  
+  border: 1px solid var(--border-line-color);
+  background-color: transparent;
+
+  max-width: 100%;
+
+  transition-property: border-color, box-shadow;
+  transition-duration: .35s;
+
+  &:not(.field-multiline) {
+    line-height: 2.5em;
+    height: 2.5em;
+  }
+
+  &:hover { @extend .shadow-sm !optional; }
+  &:focus, &:focus-within { border-color: var(--color-primary); }
+
+  &:disabled, &.disabled {
+    color: var(--color-disabled) !important;
+    box-shadow: none !important;
+  }
+}
+
+.input, .select, .textarea {
+  @extend .field;
+  @extend .px-sm !optional;
+}
+
+.textarea {
+  @extend .field-multiline;
+}
+
+.input-wrapper {
+  @extend .field;
+  @extend .stack, .stack-horizontal !optional;
+
+  input, select, textarea, button {
+    @extend .px-sm !optional;
+    
+    box-sizing: border-box;
+    line-height: inherit;
+    border: none;
+    font: inherit;
+    padding: 0;
+    margin: 0;
+    background-color: transparent;
+    min-width: 2.5em;
+  }
+
+  input, select, textarea {
+    @extend .w-expand !optional;
+  }
+
+  textarea {
+    resize: none;
+  }
+}
+
+.radio {
+  @extend .p-md, .r-lg !optional;
+
+  border: 1px solid var(--border-line-color);
+
+  color: var(--color-primary);
+  transition-property: border-color;
+  transition-duration: .35s;
+
+  > label {
+    transition-property: color;
+    transition-duration: .35s;
+  }
+
+  input[type=radio] {
+    @extend .r-full, .m-none !optional;
+
+    border: 1px solid var(--border-line-color);
+
+    box-sizing: border-box;
+    height: 1em;
+    width: 1em;
+  }
+
+  &:hover, > input[type=radio]:hover {
+    border-color: var(--color-primary);
+  }
+
+  & hover > label { color: var(--color-primary); }
+}

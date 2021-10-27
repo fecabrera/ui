@@ -1,0 +1,406 @@
+@import "spacing";
+@import "media";
+
+@mixin p-none { padding: $spacing-none !important; }
+@mixin p-xs { padding: $spacing-xs !important; }
+@mixin p-sm { padding: $spacing-sm !important; }
+@mixin p-md { padding: $spacing-md !important; }
+@mixin p-lg { padding: $spacing-lg !important; }
+@mixin p-xl { padding: $spacing-xl !important; }
+
+@mixin pt-none { padding-top: $spacing-none !important; }
+@mixin pt-xs { padding-top: $spacing-xs !important; }
+@mixin pt-sm { padding-top: $spacing-sm !important; }
+@mixin pt-md { padding-top: $spacing-md !important; }
+@mixin pt-lg { padding-top: $spacing-lg !important; }
+@mixin pt-xl { padding-top: $spacing-xl !important; }
+
+@mixin pb-none { padding-bottom: $spacing-none !important; }
+@mixin pb-xs { padding-bottom: $spacing-xs !important; }
+@mixin pb-sm { padding-bottom: $spacing-sm !important; }
+@mixin pb-md { padding-bottom: $spacing-md !important; }
+@mixin pb-lg { padding-bottom: $spacing-lg !important; }
+@mixin pb-xl { padding-bottom: $spacing-xl !important; }
+
+@mixin py-none { @include pt-none; @include pb-none; }
+@mixin py-xs { @include pt-xs; @include pb-xs; }
+@mixin py-sm { @include pt-sm; @include pb-sm; }
+@mixin py-md { @include pt-md; @include pb-md; }
+@mixin py-lg { @include pt-lg; @include pb-lg; }
+@mixin py-xl { @include pt-xl; @include pb-xl; }
+
+@mixin pl-none { padding-left: $spacing-none !important; }
+@mixin pl-xs { padding-left: $spacing-xs !important; }
+@mixin pl-sm { padding-left: $spacing-sm !important; }
+@mixin pl-md { padding-left: $spacing-md !important; }
+@mixin pl-lg { padding-left: $spacing-lg !important; }
+@mixin pl-xl { padding-left: $spacing-xl !important; }
+
+@mixin pr-none { padding-right: $spacing-none !important; }
+@mixin pr-xs { padding-right: $spacing-xs !important; }
+@mixin pr-sm { padding-right: $spacing-sm !important; }
+@mixin pr-md { padding-right: $spacing-md !important; }
+@mixin pr-lg { padding-right: $spacing-lg !important; }
+@mixin pr-xl { padding-right: $spacing-xl !important; }
+
+@mixin px-none { @include pl-none; @include pr-none; }
+@mixin px-xs { @include pl-xs; @include pr-xs; }
+@mixin px-sm { @include pl-sm; @include pr-sm; }
+@mixin px-md { @include pl-md; @include pr-md; }
+@mixin px-lg { @include pl-lg; @include pr-lg; }
+@mixin px-xl { @include pl-xl; @include pr-xl; }
+
+.p-none { @include p-none; }
+.p-xs { @include p-xs; }
+.p-sm { @include p-sm; }
+.p-md { @include p-md; }
+.p-lg { @include p-lg; }
+.p-xl { @include p-xl; }
+
+.pt-none { @include pt-none; }
+.pt-xs { @include pt-xs; }
+.pt-sm { @include pt-sm; }
+.pt-md { @include pt-md; }
+.pt-lg { @include pt-lg; }
+.pt-xl { @include pt-xl; }
+
+.pb-none { @include pb-none; }
+.pb-xs { @include pb-xs; }
+.pb-sm { @include pb-sm; }
+.pb-md { @include pb-md; }
+.pb-lg { @include pb-lg; }
+.pb-xl { @include pb-xl; }
+
+.py-none { @include py-none; }
+.py-xs { @include py-xs; }
+.py-sm { @include py-sm; }
+.py-md { @include py-md; }
+.py-lg { @include py-lg; }
+.py-xl { @include py-xl; }
+
+.pl-none { @include pl-none; }
+.pl-xs { @include pl-xs; }
+.pl-sm { @include pl-sm; }
+.pl-md { @include pl-md; }
+.pl-lg { @include pl-lg; }
+.pl-xl { @include pl-xl; }
+
+.pr-none { @include pr-none; }
+.pr-xs { @include pr-xs; }
+.pr-sm { @include pr-sm; }
+.pr-md { @include pr-md; }
+.pr-lg { @include pr-lg; }
+.pr-xl { @include pr-xl; }
+
+.px-none { @include px-none; }
+.px-xs { @include px-xs; }
+.px-sm { @include px-sm; }
+.px-md { @include px-md; }
+.px-lg { @include px-lg; }
+.px-xl { @include px-xl; }
+
+@media (max-width: $media-xs) {
+  .mobile\:p-none { @include p-none; }
+  .mobile\:p-xs { @include p-xs; }
+  .mobile\:p-sm { @include p-sm; }
+  .mobile\:p-md { @include p-md; }
+  .mobile\:p-lg { @include p-lg; }
+  .mobile\:p-xl { @include p-xl; }
+
+  .mobile\:pt-none { @include pt-none; }
+  .mobile\:pt-xs { @include pt-xs; }
+  .mobile\:pt-sm { @include pt-sm; }
+  .mobile\:pt-md { @include pt-md; }
+  .mobile\:pt-lg { @include pt-lg; }
+  .mobile\:pt-xl { @include pt-xl; }
+
+  .mobile\:pb-none { @include pb-none; }
+  .mobile\:pb-xs { @include pb-xs; }
+  .mobile\:pb-sm { @include pb-sm; }
+  .mobile\:pb-md { @include pb-md; }
+  .mobile\:pb-lg { @include pb-lg; }
+  .mobile\:pb-xl { @include pb-xl; }
+
+  .mobile\:py-none { @include py-none; }
+  .mobile\:py-xs { @include py-xs; }
+  .mobile\:py-sm { @include py-sm; }
+  .mobile\:py-md { @include py-md; }
+  .mobile\:py-lg { @include py-lg; }
+  .mobile\:py-xl { @include py-xl; }
+
+  .mobile\:pl-none { @include pl-none; }
+  .mobile\:pl-xs { @include pl-xs; }
+  .mobile\:pl-sm { @include pl-sm; }
+  .mobile\:pl-md { @include pl-md; }
+  .mobile\:pl-lg { @include pl-lg; }
+  .mobile\:pl-xl { @include pl-xl; }
+
+  .mobile\:pr-none { @include pr-none; }
+  .mobile\:pr-xs { @include pr-xs; }
+  .mobile\:pr-sm { @include pr-sm; }
+  .mobile\:pr-md { @include pr-md; }
+  .mobile\:pr-lg { @include pr-lg; }
+  .mobile\:pr-xl { @include pr-xl; }
+
+  .mobile\:px-none { @include px-none; }
+  .mobile\:px-xs { @include px-xs; }
+  .mobile\:px-sm { @include px-sm; }
+  .mobile\:px-md { @include px-md; }
+  .mobile\:px-lg { @include px-lg; }
+  .mobile\:px-xl { @include px-xl; }
+}
+
+@media (min-width: $media-xs) {
+  .xs\:p-none { @include p-none; }
+  .xs\:p-xs { @include p-xs; }
+  .xs\:p-sm { @include p-sm; }
+  .xs\:p-md { @include p-md; }
+  .xs\:p-lg { @include p-lg; }
+  .xs\:p-xl { @include p-xl; }
+
+  .xs\:pt-none { @include pt-none; }
+  .xs\:pt-xs { @include pt-xs; }
+  .xs\:pt-sm { @include pt-sm; }
+  .xs\:pt-md { @include pt-md; }
+  .xs\:pt-lg { @include pt-lg; }
+  .xs\:pt-xl { @include pt-xl; }
+
+  .xs\:pb-none { @include pb-none; }
+  .xs\:pb-xs { @include pb-xs; }
+  .xs\:pb-sm { @include pb-sm; }
+  .xs\:pb-md { @include pb-md; }
+  .xs\:pb-lg { @include pb-lg; }
+  .xs\:pb-xl { @include pb-xl; }
+
+  .xs\:py-none { @include py-none; }
+  .xs\:py-xs { @include py-xs; }
+  .xs\:py-sm { @include py-sm; }
+  .xs\:py-md { @include py-md; }
+  .xs\:py-lg { @include py-lg; }
+  .xs\:py-xl { @include py-xl; }
+
+  .xs\:pl-none { @include pl-none; }
+  .xs\:pl-xs { @include pl-xs; }
+  .xs\:pl-sm { @include pl-sm; }
+  .xs\:pl-md { @include pl-md; }
+  .xs\:pl-lg { @include pl-lg; }
+  .xs\:pl-xl { @include pl-xl; }
+
+  .xs\:pr-none { @include pr-none; }
+  .xs\:pr-xs { @include pr-xs; }
+  .xs\:pr-sm { @include pr-sm; }
+  .xs\:pr-md { @include pr-md; }
+  .xs\:pr-lg { @include pr-lg; }
+  .xs\:pr-xl { @include pr-xl; }
+
+  .xs\:px-none { @include px-none; }
+  .xs\:px-xs { @include px-xs; }
+  .xs\:px-sm { @include px-sm; }
+  .xs\:px-md { @include px-md; }
+  .xs\:px-lg { @include px-lg; }
+  .xs\:px-xl { @include px-xl; }
+}
+
+@media (min-width: $media-sm) {
+  .sm\:p-none { @include p-none; }
+  .sm\:p-xs { @include p-xs; }
+  .sm\:p-sm { @include p-sm; }
+  .sm\:p-md { @include p-md; }
+  .sm\:p-lg { @include p-lg; }
+  .sm\:p-xl { @include p-xl; }
+
+  .sm\:pt-none { @include pt-none; }
+  .sm\:pt-xs { @include pt-xs; }
+  .sm\:pt-sm { @include pt-sm; }
+  .sm\:pt-md { @include pt-md; }
+  .sm\:pt-lg { @include pt-lg; }
+  .sm\:pt-xl { @include pt-xl; }
+
+  .sm\:pb-none { @include pb-none; }
+  .sm\:pb-xs { @include pb-xs; }
+  .sm\:pb-sm { @include pb-sm; }
+  .sm\:pb-md { @include pb-md; }
+  .sm\:pb-lg { @include pb-lg; }
+  .sm\:pb-xl { @include pb-xl; }
+
+  .sm\:py-none { @include py-none; }
+  .sm\:py-xs { @include py-xs; }
+  .sm\:py-sm { @include py-sm; }
+  .sm\:py-md { @include py-md; }
+  .sm\:py-lg { @include py-lg; }
+  .sm\:py-xl { @include py-xl; }
+
+  .sm\:pl-none { @include pl-none; }
+  .sm\:pl-xs { @include pl-xs; }
+  .sm\:pl-sm { @include pl-sm; }
+  .sm\:pl-md { @include pl-md; }
+  .sm\:pl-lg { @include pl-lg; }
+  .sm\:pl-xl { @include pl-xl; }
+
+  .sm\:pr-none { @include pr-none; }
+  .sm\:pr-xs { @include pr-xs; }
+  .sm\:pr-sm { @include pr-sm; }
+  .sm\:pr-md { @include pr-md; }
+  .sm\:pr-lg { @include pr-lg; }
+  .sm\:pr-xl { @include pr-xl; }
+
+  .sm\:px-none { @include px-none; }
+  .sm\:px-xs { @include px-xs; }
+  .sm\:px-sm { @include px-sm; }
+  .sm\:px-md { @include px-md; }
+  .sm\:px-lg { @include px-lg; }
+  .sm\:px-xl { @include px-xl; }
+}
+
+@media (min-width: $media-md) {
+  .md\:p-none { @include p-none; }
+  .md\:p-xs { @include p-xs; }
+  .md\:p-sm { @include p-sm; }
+  .md\:p-md { @include p-md; }
+  .md\:p-lg { @include p-lg; }
+  .md\:p-xl { @include p-xl; }
+
+  .md\:pt-none { @include pt-none; }
+  .md\:pt-xs { @include pt-xs; }
+  .md\:pt-sm { @include pt-sm; }
+  .md\:pt-md { @include pt-md; }
+  .md\:pt-lg { @include pt-lg; }
+  .md\:pt-xl { @include pt-xl; }
+
+  .md\:pb-none { @include pb-none; }
+  .md\:pb-xs { @include pb-xs; }
+  .md\:pb-sm { @include pb-sm; }
+  .md\:pb-md { @include pb-md; }
+  .md\:pb-lg { @include pb-lg; }
+  .md\:pb-xl { @include pb-xl; }
+
+  .md\:py-none { @include py-none; }
+  .md\:py-xs { @include py-xs; }
+  .md\:py-sm { @include py-sm; }
+  .md\:py-md { @include py-md; }
+  .md\:py-lg { @include py-lg; }
+  .md\:py-xl { @include py-xl; }
+
+  .md\:pl-none { @include pl-none; }
+  .md\:pl-xs { @include pl-xs; }
+  .md\:pl-sm { @include pl-sm; }
+  .md\:pl-md { @include pl-md; }
+  .md\:pl-lg { @include pl-lg; }
+  .md\:pl-xl { @include pl-xl; }
+
+  .md\:pr-none { @include pr-none; }
+  .md\:pr-xs { @include pr-xs; }
+  .md\:pr-sm { @include pr-sm; }
+  .md\:pr-md { @include pr-md; }
+  .md\:pr-lg { @include pr-lg; }
+  .md\:pr-xl { @include pr-xl; }
+
+  .md\:px-none { @include px-none; }
+  .md\:px-xs { @include px-xs; }
+  .md\:px-sm { @include px-sm; }
+  .md\:px-md { @include px-md; }
+  .md\:px-lg { @include px-lg; }
+  .md\:px-xl { @include px-xl; }
+}
+
+@media (min-width: $media-lg) {
+  .lg\:p-none { @include p-none; }
+  .lg\:p-xs { @include p-xs; }
+  .lg\:p-sm { @include p-sm; }
+  .lg\:p-md { @include p-md; }
+  .lg\:p-lg { @include p-lg; }
+  .lg\:p-xl { @include p-xl; }
+
+  .lg\:pt-none { @include pt-none; }
+  .lg\:pt-xs { @include pt-xs; }
+  .lg\:pt-sm { @include pt-sm; }
+  .lg\:pt-md { @include pt-md; }
+  .lg\:pt-lg { @include pt-lg; }
+  .lg\:pt-xl { @include pt-xl; }
+
+  .lg\:pb-none { @include pb-none; }
+  .lg\:pb-xs { @include pb-xs; }
+  .lg\:pb-sm { @include pb-sm; }
+  .lg\:pb-md { @include pb-md; }
+  .lg\:pb-lg { @include pb-lg; }
+  .lg\:pb-xl { @include pb-xl; }
+
+  .lg\:py-none { @include py-none; }
+  .lg\:py-xs { @include py-xs; }
+  .lg\:py-sm { @include py-sm; }
+  .lg\:py-md { @include py-md; }
+  .lg\:py-lg { @include py-lg; }
+  .lg\:py-xl { @include py-xl; }
+
+  .lg\:pl-none { @include pl-none; }
+  .lg\:pl-xs { @include pl-xs; }
+  .lg\:pl-sm { @include pl-sm; }
+  .lg\:pl-md { @include pl-md; }
+  .lg\:pl-lg { @include pl-lg; }
+  .lg\:pl-xl { @include pl-xl; }
+
+  .lg\:pr-none { @include pr-none; }
+  .lg\:pr-xs { @include pr-xs; }
+  .lg\:pr-sm { @include pr-sm; }
+  .lg\:pr-md { @include pr-md; }
+  .lg\:pr-lg { @include pr-lg; }
+  .lg\:pr-xl { @include pr-xl; }
+
+  .lg\:px-none { @include px-none; }
+  .lg\:px-xs { @include px-xs; }
+  .lg\:px-sm { @include px-sm; }
+  .lg\:px-md { @include px-md; }
+  .lg\:px-lg { @include px-lg; }
+  .lg\:px-xl { @include px-xl; }
+}
+
+@media (min-width: $media-xl) {
+  .xl\:p-none { @include p-none; }
+  .xl\:p-xs { @include p-xs; }
+  .xl\:p-sm { @include p-sm; }
+  .xl\:p-md { @include p-md; }
+  .xl\:p-lg { @include p-lg; }
+  .xl\:p-xl { @include p-xl; }
+
+  .xl\:pt-none { @include pt-none; }
+  .xl\:pt-xs { @include pt-xs; }
+  .xl\:pt-sm { @include pt-sm; }
+  .xl\:pt-md { @include pt-md; }
+  .xl\:pt-lg { @include pt-lg; }
+  .xl\:pt-xl { @include pt-xl; }
+
+  .xl\:pb-none { @include pb-none; }
+  .xl\:pb-xs { @include pb-xs; }
+  .xl\:pb-sm { @include pb-sm; }
+  .xl\:pb-md { @include pb-md; }
+  .xl\:pb-lg { @include pb-lg; }
+  .xl\:pb-xl { @include pb-xl; }
+
+  .xl\:py-none { @include py-none; }
+  .xl\:py-xs { @include py-xs; }
+  .xl\:py-sm { @include py-sm; }
+  .xl\:py-md { @include py-md; }
+  .xl\:py-lg { @include py-lg; }
+  .xl\:py-xl { @include py-xl; }
+
+  .xl\:pl-none { @include pl-none; }
+  .xl\:pl-xs { @include pl-xs; }
+  .xl\:pl-sm { @include pl-sm; }
+  .xl\:pl-md { @include pl-md; }
+  .xl\:pl-lg { @include pl-lg; }
+  .xl\:pl-xl { @include pl-xl; }
+
+  .xl\:pr-none { @include pr-none; }
+  .xl\:pr-xs { @include pr-xs; }
+  .xl\:pr-sm { @include pr-sm; }
+  .xl\:pr-md { @include pr-md; }
+  .xl\:pr-lg { @include pr-lg; }
+  .xl\:pr-xl { @include pr-xl; }
+
+  .xl\:px-none { @include px-none; }
+  .xl\:px-xs { @include px-xs; }
+  .xl\:px-sm { @include px-sm; }
+  .xl\:px-md { @include px-md; }
+  .xl\:px-lg { @include px-lg; }
+  .xl\:px-xl { @include px-xl; }
+}

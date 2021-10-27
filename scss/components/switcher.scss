@@ -1,0 +1,39 @@
+@import "carousel";
+@import "menu";
+
+.switcher {
+  @extend .carousel;
+
+  .switcher-content {
+    @extend .carousel-content;
+
+    > .switcher-item {
+      @extend .carousel-item;
+
+      transition-property: height;
+      transition-duration: .5s;
+
+      &:not(.active) {
+        height: 0 !important;
+      }
+    }
+  }
+}
+
+.switcher-header {
+  @extend .menu, .menu-horizontal;
+
+  .switcher-header-item {
+    @extend .menu-item;
+    @extend .medium, .py-xs !optional;
+
+    border-bottom: 1px solid transparent;
+
+    transition-property: color, border-color !important;
+
+    &:hover, &.active {
+      border-color: var(--color-primary);
+      color: var(--color-primary);
+    }
+  }
+}

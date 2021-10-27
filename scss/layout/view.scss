@@ -1,0 +1,58 @@
+@import "media";
+
+@mixin view-xs { width: $media-xs; }
+@mixin view-sm { width: $media-sm; }
+@mixin view-md { width: $media-md; }
+@mixin view-lg { width: $media-lg; }
+@mixin view-xl { width: $media-xl; }
+@mixin view-full { width: $media-full; }
+
+.view {
+  width: $media-full;
+  margin: 0 auto;
+  box-sizing: border-box;
+
+  &.view-xs { @include view-xs; }
+  &.view-sm { @include view-sm; }
+  &.view-md { @include view-md; }
+  &.view-lg { @include view-lg; }
+  &.view-xl { @include view-xl; }
+  &.view-auto, &.view-full { @include view-full; }
+  
+  @media (min-width: $media-xs) {
+    &.xs\:view-xs { @include view-xs; }
+    &.xs\:view-full { @include view-full; }
+    &.view-auto { @include view-xs; }
+  }
+
+  @media (min-width: $media-sm) {
+    &.sm\:view-xs { @include view-xs; }
+    &.sm\:view-sm { @include view-sm; }
+    &.sm\:view-full { @include view-full; }
+    &.view-auto { @include view-sm; }
+  }
+  
+  @media (min-width: $media-md) {
+    &.md\:view-xs { @include view-xs; }
+    &.md\:view-sm { @include view-sm; }
+    &.view-auto, &.md\:view-md { @include view-md; }
+    &.md\:view-full { @include view-full; }
+  }
+  
+  @media (min-width: $media-lg) {
+    &.lg\:view-xs { @include view-xs; }
+    &.lg\:view-sm { @include view-sm; }
+    &.view-auto, &.lg\:view-md { @include view-md; }
+    &.lg\:view-lg { @include view-lg; }
+    &.lg\:view-full { @include view-full; }
+  }
+  
+  @media (min-width: $media-xl) {
+    &.xl\:view-xs { @include view-xs; }
+    &.xl\:view-sm { @include view-sm; }
+    &.view-auto, &.xl\:view-md { @include view-md; }
+    &.xl\:view-lg { @include view-lg; }
+    &.xl\:view-xl { @include view-lg; }
+    &.xl\:view-full { @include view-full; }
+  }
+}

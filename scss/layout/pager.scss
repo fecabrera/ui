@@ -1,0 +1,43 @@
+.pager {
+  > .pager-content {
+
+  }
+
+  > .pager-items {
+    @extend .stack, .stack-horizontal !optional;
+    @extend .justify-content-center, .p-md !optional;
+
+    > .pager-item {
+      @extend .stack-item !optional;
+      @extend .semibold !optional;
+      
+      > a {
+        @extend .r-full !optional;
+
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        
+        box-sizing: border-box;
+        text-decoration: none;
+        
+        height: 2em;
+        width: 2em;
+
+        color: var(--color-default);
+
+        transition: all .35s;
+      }
+
+      &.active > a {
+        background-color: var(--color-primary);
+        color: white;
+      }
+
+      &:not(.active) > a:hover {
+        color: var(--color-primary);
+      }
+    }
+  }
+}
